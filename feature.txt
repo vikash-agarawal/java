@@ -1,0 +1,61 @@
+
+@RegistrationForm
+Feature: @RegistrationForm
+
+Scenario: check the title
+Given User is on Registration Form
+Then check the title of the page
+
+Scenario: Failure in Registration Form on leaving the user ID empty
+Given User is on Registration Form
+When user leaves user ID empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the password empty
+Given User is on Registration Form
+When user leaves password empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the name empty
+Given User is on Registration Form
+When user leaves name empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the address empty
+Given User is on Registration Form
+When user leaves address empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the country empty
+Given User is on Registration Form
+When user leaves country empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the Zipcode empty
+Given User is on Registration Form
+When user leaves Zipcode empty
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on entering the emailId wrong
+Given User is on Registration Form
+When user enters wrong emailId
+And clicks the button 
+Then display alert msg
+
+Scenario: Failure in Registration Form on leaving the sex selection empty
+Given User is on Registration Form
+When user leaves sex selection empty
+And clicks the button 
+Then display alert msg
+
+Scenario: successful in Registration Form on entering all data valid
+Given User is on Registration Form
+When user enters all valid data
+And clicks the button 
+Then close the driver
